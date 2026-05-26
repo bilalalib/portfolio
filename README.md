@@ -2,7 +2,7 @@
 
 A fully interactive, command-line interface (CLI) styled personal portfolio built to showcase my software engineering projects, technical stack, and background. 
 
-🔗 **Live Site:** [Insert Your Vercel Link Here]
+🔗 **Live Site:** bilal-ba.vercel.app
 
 ## About
 I am an undergraduate Software Engineering student at NUST, building production-grade tools. This portfolio operates like a native Linux terminal environment, complete with interactive commands, multi-tab switching, and customized themes.
