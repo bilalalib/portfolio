@@ -5,7 +5,6 @@ const createBanner = () : string[] => {
   banner.push("<br>")
   command.ascii.forEach((ele) => {
     let bannerString = "";
-    //this is for the ascii art
     for (let i = 0; i < ele.length; i++) {
       if (ele[i] === " ") {
         bannerString += "&nbsp;";
@@ -19,8 +18,11 @@ const createBanner = () : string[] => {
   });  
   banner.push("<br>");
   banner.push("Welcome to WebShell v1.0.0");
+  banner.push("Type <span class='command'>'about'</span> to read my bio.");
+  banner.push("Type <span class='command'>'projects'</span> to view my latest work.");
   banner.push("Type <span class='command'>'help'</span> for a list of all available commands.");
   banner.push(`Type <span class='command'>'repo'</span> to view the GitHub repository or click <a href='${command.repoLink}' target='_blank'>here</a>.`);
+  banner.push("Type <span class='command'>'theme light'</span> and <span class='command'>'theme dark'</span> to switch between light and dark mode.");
   banner.push("<br>");
   return banner;
 }

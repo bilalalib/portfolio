@@ -193,6 +193,56 @@ a:hover {
   word-break: break-word !important;
 }
 
+.project-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #415a77;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  width: 85%;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  border-color: #a3b18a;
+  background-color: rgba(163, 177, 138, 0.05);
+}
+
+.project-card-title {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.project-card-title a {
+  text-decoration: none;
+}
+
+.project-card-desc {
+  margin-top: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  opacity: 0.85;
+}
+
+.project-card-tags {
+  margin-top: 14px;
+  font-size: 0.85em;
+  opacity: 0.5;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+body.light-theme .project-card {
+  border-color: #cbd5e1 !important;
+}
+
+body.light-theme .project-card:hover {
+  border-color: #059669 !important;
+  background-color: rgba(5, 150, 105, 0.03) !important;
+}
+
 @media (max-width: 600px) {
   body {
     font-size: 10px;
@@ -228,6 +278,22 @@ a:hover {
   #input-line {
     margin-left: 8px;
   }
+}
+
+.project-title-col {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-tags {
+  font-size: 0.85em;
+  color: #a3b18a;
+  margin-top: 2px;
+}
+
+body.light-theme .project-tags {
+  color: #64748b !important;
 }
 
 body.light-theme {

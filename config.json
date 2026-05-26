@@ -21,25 +21,30 @@
   "projects": [
     [
       "Media Tracker",
-      "Full-stack React & Supabase app to discover and sync multimedia libraries. Engineered custom APIs to bypass strict rate limits.",
-      "https://github.com/bilalalib/media-tracker"
+      "Full-stack React & Supabase app to discover and sync multimedia libraries. Engineered custom APIs to bypass strict rate limits and implemented infinite paginated data grids.",
+      "https://github.com/bilalalib/media-tracker",
+      "[Rust] [React] [Supabase] [Docker]"
     ],
     [
       "C++ Search Engine",
-      "High-efficiency search engine implementing Inverted Indexing and Tries to reduce query complexity to O(1).",
-      "#"
+      "High-efficiency search engine implementing Inverted Indexing and Tries to reduce query complexity to O(1). Built custom HashMaps without relying on high-level libraries.",
+      "#",
+      "[C++] [Data Structures] [Algorithms]"
     ],
     [
       "SmartBus Islamabad",
-      "Hardware and software prototype for digitising public bus stops with real-time ETA tracking.",
-      "https://github.com/bilalalib/Smart-Bus-System"
+      "Hardware and software prototype for digitising public bus stops with real-time ETA tracking. Developed in collaboration with InLights at the National Science & Technology Park.",
+      "https://github.com/bilalalib/Smart-Bus-System",
+      "[Hardware Integration] [Cloud CMS] [GPS]"
     ],
     [
       "AI Virtual Wardrobe",
-      "Java application using Gemini API for context-aware, generative AI outfit recommendations.",
-      "#"
+      "Java application using Gemini API for context-aware, generative AI outfit recommendations. Implemented cross-referencing for real-time weather and social occasion context.",
+      "#",
+      "[Java] [Gemini API] [Swing UI]"
     ]
   ],
+  
   "colors": {
     "background": "#0a1128",
     "foreground": "#e0e0e0",
