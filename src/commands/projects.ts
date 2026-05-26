@@ -4,7 +4,7 @@ const createProject = () : string[] => {
   const projects : string[] = [];
 
   projects.push("<br>");
-  projects.push("<span class='output' style='margin-left: 20px; opacity: 0.6; font-style: italic;'>current tech loadout. experimenting with generative AI next.</span>");
+  projects.push("<span class='output responsive-text' style='margin-left: 20px; padding-right: 20px; opacity: 0.6; font-style: italic;'>// current tech loadout. experimenting with generative AI next.</span>");
   projects.push("<br>");
 
   command.projects.forEach((ele) => {
