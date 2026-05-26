@@ -102,6 +102,47 @@ a:hover {
   color: var(--bg);
 }
 
+#tab-bar {
+  display: flex;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+  margin-left: 20px;
+  user-select: none;
+}
+
+.terminal-tab {
+  padding: 8px 24px;
+  font-size: 0.9em;
+  cursor: pointer;
+  opacity: 0.4;
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  transition: all 0.2s ease-in-out;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.terminal-tab:hover {
+  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.terminal-tab.active {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--border);
+  color: var(--prompt-1);
+}
+
+body.light-theme #tab-bar {
+  border-color: #cbd5e1 !important;
+}
+body.light-theme .terminal-tab.active {
+  background-color: #e2e8f0 !important;
+  border-color: #cbd5e1 !important;
+  color: #059669 !important;
+}
+
 #bars {
   font-family: 'Pixelify Sans', sans-serif;
   font-size: 20px;

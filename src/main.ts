@@ -383,7 +383,6 @@ function easterEggStyles() {
   if (PROMPT) PROMPT.style.color = "white";
 
 }
-
 const initEventListeners = () => {
   if(HOST) {
     HOST.innerText= command.hostname;
@@ -401,7 +400,7 @@ const initEventListeners = () => {
     PRE_USER.innerText = command.username;
   } 
 
-    window.addEventListener('load', () => {
+  window.addEventListener('load', () => {
     writeLines(BANNER);
   });
   
@@ -411,6 +410,28 @@ const initEventListeners = () => {
 
   window.addEventListener('click', () => {
     USERINPUT.focus();
+  });
+
+  const tabs = document.querySelectorAll('.terminal-tab');
+  
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+
+      tabs.forEach(t => t.classList.remove('active'));
+
+      tab.classList.add('active');
+
+      const targetCmd = (tab as HTMLElement).dataset.cmd;
+      
+      if (targetCmd) {
+        
+        commandHandler('clear');
+        
+        setTimeout(() => {
+          commandHandler(targetCmd);
+        }, 50);
+      }
+    });
   });
 
   console.log(`%cPassword: ${command.password}`, "color: red; font-size: 20px;");
