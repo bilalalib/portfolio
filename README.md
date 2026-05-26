@@ -26,7 +26,7 @@ If you want to run this portfolio locally:
 
 1. Clone the repository:
    ```shell
-   git clone [https://github.com/bilalalib/your-repo-name.git](https://github.com/bilalalib/your-repo-name.git)
+   git clone [https://github.com/bilalalib/portfolio.git](https://github.com/bilalalib/portfolio.git)
 
 2. Install dependencies:
    ```shell
