@@ -1,4 +1,4 @@
-import command from '../config.json' assert {type: 'json'};
+import command from '../config.json' with {type: 'json'};
 import { HELP } from "./commands/help";
 import { BANNER } from "./commands/banner";
 import { ABOUT } from "./commands/about"

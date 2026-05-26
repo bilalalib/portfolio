@@ -1,4 +1,4 @@
-import command from '../../config.json' assert {type: 'json'};
+import command from '../../config.json' with {type: 'json'};
 
 const createProject = () : string[] => {
   let string = "";
@@ -9,13 +9,9 @@ const createProject = () : string[] => {
   projects.push("<br>")
 
   command.projects.forEach((ele) => {
-    let link = `<a href="${ele[2]}" target="_blank">${ele[0]}</a>`
-    string += SPACE.repeat(2);
-    string += link;
-    string += SPACE.repeat(17 - ele[0].length);
-    string += ele[1];
-    projects.push(string);
-    string = '';
+    let link = `<a href="${ele[2]}" target="_blank">${ele[0]}</a>`;
+    let row = `<div class="project-row"><span class="project-title">${link}</span><span class="project-desc">${ele[1]}</span></div>`;
+    projects.push(row);
   });
 
   projects.push("<br>");
