@@ -229,3 +229,66 @@ a:hover {
     margin-left: 8px;
   }
 }
+
+body.light-theme {
+  background: #f4f4f5 !important;
+  color: #27272a !important;
+}
+
+body.light-theme input {
+  background: #f4f4f5 !important;
+  color: #09090b !important;
+  caret-color: #09090b !important;
+}
+
+body.light-theme .output, 
+body.light-theme span {
+  color: #27272a !important;
+}
+
+body.light-theme #pre-host,
+body.light-theme #host,
+body.light-theme #pre-user,
+body.light-theme #user,
+body.light-theme #prompt {
+  color: #475569 !important; 
+}
+
+body.light-theme pre {
+  color: #334155 !important; 
+}
+
+body.light-theme a {
+  color: #2563eb !important;
+}
+
+body.light-theme a:hover {
+  background: #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+body.light-theme .command {
+  color: #059669 !important;
+  text-shadow: none !important;
+  font-weight: 600 !important;
+}
+
+body.light-theme .keys {
+  color: #ea580c !important;
+}
+
+body.light-theme main {
+  border-color: #cbd5e1 !important;
+}
+
+body.light-theme #bar-1,
+body.light-theme #bar-2,
+body.light-theme #bar-3,
+body.light-theme #bar-4,
+body.light-theme #bar-5 {
+  background: #cbd5e1 !important;
+}
+
+body.light-theme #bar-1 {
+  color: #334155 !important;
+}

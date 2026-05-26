@@ -5,6 +5,8 @@ import { ABOUT } from "./commands/about"
 import { DEFAULT } from "./commands/default";
 import { PROJECTS } from "./commands/projects";
 import { createWhoami } from "./commands/whoami";
+import { theme } from "./commands/theme";
+import { smash } from "./commands/smash";
 
 //mutWriteLines gets deleted and reassigned
 let mutWriteLines = document.getElementById("write-lines");
@@ -28,7 +30,7 @@ const PRE_USER = document.getElementById("pre-user");
 const HOST = document.getElementById("host");
 const USER = document.getElementById("user");
 const PROMPT = document.getElementById("prompt");
-const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear"];
+const COMMANDS = ["help", "about", "projects", "whoami", "repo", "banner", "clear", "theme", "smash"];
 const HISTORY : string[] = [];
 const SUDO_PASSWORD = command.password;
 const REPO_LINK = command.repoLink;
@@ -223,6 +225,19 @@ function commandHandler(input : string) {
         break;
       }
       writeLines(PROJECTS);
+      break;
+    case 'theme light':
+      writeLines(theme(["light"]));
+      break;
+    case 'theme dark':
+      writeLines(theme(["dark"]));
+      break;
+    case 'smash':
+      if(bareMode) {
+        writeLines(["Not enough spin.", "<br>"])
+        break;
+      }
+      writeLines(smash());
       break;
     case 'repo':
       writeLines(["Redirecting to github.com...", "<br>"]);
