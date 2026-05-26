@@ -1,86 +1,40 @@
-# [WebShell | Terminal Portfolio Website](https://webshellx.vercel.app/)
+# Bilal Ahmad | Terminal Portfolio
 
-<div align="center">
-  <img alt="banner" src="https://raw.githubusercontent.com/nasan016/webshell/main/res/banner.png">
-</div>
+A fully interactive, command-line interface (CLI) styled personal portfolio built to showcase my software engineering projects, technical stack, and background. 
 
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+🔗 **Live Site:** [Insert Your Vercel Link Here]
 
-Create your own terminal styled website! Check out [term.nasan.dev](https://term.nasan.dev/) for an example.
+## About
+I am an undergraduate Software Engineering student at NUST, building production-grade tools. This portfolio operates like a native Linux terminal environment, complete with interactive commands, multi-tab switching, and customized themes.
 
-## Features
-* **[Tab]** for auto completion.
-* **[Esc]** to clear the input line.
-* **[↑][↓]** to scroll through your command history.
+## Features & Commands
+Type `help` in the terminal to see the full list of available commands. Key features include:
+* `projects` - Displays an interactive grid of my recent work (Rust, React, C++, Java).
+* `theme light` / `theme dark` - Toggles custom CSS color palettes.
+* `smash` - A hidden command detailing my table tennis playstyle.
+* **Tab Completion** - Native auto-complete for all commands.
+* **Command History** - Use `[↑][↓]` arrows to scroll through previous inputs.
 
-## ???
-<div align="center">
-  <img alt="banner" src="https://raw.githubusercontent.com/nasan016/webshell/main/res/secret.png">
-</div>
-How did we get here?
+## Tech Stack
+* **TypeScript & JavaScript** (Core terminal logic)
+* **HTML5 & CSS3** (Custom responsive layouts and Flexbox grids)
+* **Vite** (Build tool)
+* **Vercel** (Deployment)
 
-## Configuration
+## Local Setup
+If you want to run this portfolio locally:
 
-Most of the configuration is done in the `config.json` file.
+1. Clone the repository:
+   ```shell
+   git clone [https://github.com/bilalalib/your-repo-name.git](https://github.com/bilalalib/your-repo-name.git)
 
-```json
-{
-  "ascii": [
-    "██████╗ ██╗   ██╗ ██████╗",
-    "██╔══██╗██║   ██║██╔════╝",
-    "██║  ██║██║   ██║██║  ███╗",
-    "██║  ██║██║   ██║██║   ██║",
-    "██████╔╝╚██████╔╝╚██████╔╝",
-    "╚═════╝  ╚═════╝  ╚═════╝",
-  ],
-  "title": "Dug's Terminal",
-  "username": "guest",
-  "hostname": "dug.dev",
-  "password": "squirrel",
-  "repoLink": "https://github.com/nasan016/webshell",
-  "social": {
-    "email": "dug@pixar.com",
-    "github": "dugfromup",
-    "linkedin": "dugthedog"
-  },
-  "aboutGreeting": "My name is Dug. I have just met you.",
-  "projects": [
-    [
-      "Project Name",
-      "Project Description",
-      "Project Link"
-    ],
-    [
-      "Another Project Name",
-      "Another Project Description",
-      "Another Project Link"
-    ]
-  ],
-  "colors": {
-      ...
-  }
-}
-```
+2. Install dependencies:
+   ```shell
+   npm install
 
-## Run the Project Locally:
+3. Start the deployment server:
+   ```shell
+   npm run dev
 
-Clone the repository
-```shell
-git clone https://github.com/nasan016/webshell.git
-```
-Go to the project directory
-```shell
-cd webshell
-```
-Install the dependencies
-```shell
-npm install
-```
-Start the server
-```shell
-npm run dev
-```
+---
+**Credits:** This project was originally forked and heavily customized from [WebShell](https://github.com/nasan016/webshell) by Nathaniel Macapinlac.
